@@ -566,8 +566,8 @@ main#about-us a.btn-link {
 .services > .container .heading p {
     color: var(--slate);
     line-height: 1.8;
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
-    max-width: 600px;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    max-width: 65ch;
     margin: 0 auto 2rem;
 }
 
@@ -2321,12 +2321,6 @@ footer .container {
     margin-bottom: 3rem;
 }
 
-#about-us .text {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
 #about-us .text p {
     font-size: 1.1rem;
     line-height: 1.8;
@@ -2347,15 +2341,6 @@ footer .container {
     color: var(--slate);
     font-size: 1.1rem;
     line-height: 1.6;
-}
-
-#about-us .text ul li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: var(--teal);
-    font-weight: bold;
-    font-size: 1.3rem;
 }
 
 /* Simplified CTA Section Styles */

@@ -1,5 +1,8 @@
 // About Page Animations and Functionality
 document.addEventListener("DOMContentLoaded", function () {
+    // Mobile Menu Functionality
+    setupMobileMenu();
+
     // Add smooth scroll behavior for scroll indicator
     const scrollIndicator = document.querySelector(".scroll-indicator");
     if (scrollIndicator) {
@@ -129,3 +132,48 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }, 800);
 });
+
+// Mobile Menu Functionality
+function setupMobileMenu() {
+    const hamburgerMenu = document.getElementById("hamburger-menu");
+    const navMenu = document.getElementById("nav-menu");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    if (!hamburgerMenu || !navMenu) return;
+
+    // Toggle mobile menu
+    hamburgerMenu.addEventListener("click", () => {
+        hamburgerMenu.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        document.body.style.overflow = navMenu.classList.contains("active")
+            ? "hidden"
+            : "";
+    });
+
+    // Close menu when clicking on a link
+    navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+            hamburgerMenu.classList.remove("active");
+            navMenu.classList.remove("active");
+            document.body.style.overflow = "";
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", (e) => {
+        if (!hamburgerMenu.contains(e.target) && !navMenu.contains(e.target)) {
+            hamburgerMenu.classList.remove("active");
+            navMenu.classList.remove("active");
+            document.body.style.overflow = "";
+        }
+    });
+
+    // Close menu on escape key
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && navMenu.classList.contains("active")) {
+            hamburgerMenu.classList.remove("active");
+            navMenu.classList.remove("active");
+            document.body.style.overflow = "";
+        }
+    });
+}
