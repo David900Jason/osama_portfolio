@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="This is my personal website sharing my own experience with other clients"
+        />
+
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Favicon -->
+        <link
+            rel="shortcut icon"
+            href="./assets/logo2.png"
+            type="image/x-icon"
+        />
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <!-- Website's title -->
+        <title>Usama Hossam El-din | Script writer</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav>
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="./assets/logo2.png" alt="Logo" />
+                </div>
+
+                <!-- Hamburger Menu Button -->
+                <button
+                    class="hamburger-menu"
+                    id="hamburger-menu"
+                    aria-label="Toggle navigation menu"
+                >
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li>
+                        <a href="pages/about.html" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="pages/courses.html" class="nav-link"
+                            >Courses</a
+                        >
+                    </li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <!-- Text -->
+                <div class="text">
+                    <span>Hello, </span>
+                    <h2>I'm <span class="text-highlight">Usama</span>,</h2>
+                    <h2 id="job-role" role="heading"></h2>
+                </div>
+                <!-- Image -->
+                <div class="image">
+                    <div class="img-box">
+                        <img
+                            src="./assets/profile-w-bg.jpeg"
+                            alt="Profile Image"
+                        />
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- About -->
+        <main id="about-us">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="text">
+                    <p>
+                        As the driving force behind The Script, Usama Hossam
+                        Eldin brings a unique blend of academic rigor and
+                        practical industry insight. His profound expertise stems
+                        from specialized courses at prestigious institutions:
+                    </p>
+                    <ul>
+                        <li>Screenwriting – Story & Structure (NYFA)</li>
+                        <li>Screenwriting – Television Pilot (NYFA)</li>
+                        <li>
+                            Professional Program in Writing for Television
+                            (UCLA)
+                        </li>
+                        <li>
+                            Script Doctor – Script Reading (Script University)
+                        </li>
+                    </ul>
+                    <p>
+                        Usama is the author of
+                        <span class="highlight"
+                            >'Decoding the Script' (فك شفرة السيناريو)</span
+                        >, his Master's thesis - a seminal guide to the craft of
+                        screenwriting. His extensive portfolio includes
+                        acclaimed films such as
+                        <span class="highlight"
+                            >Al Mesteraiha, Khasesny Shukran, The Blue
+                            Whale</span
+                        >, and
+                        <span class="highlight">Godfather & Al Aazef</span>
+                        (currently in production). He has also written for
+                        television series including
+                        <span class="highlight"
+                            >Khamas Daqaiq, Al Jar lelJar, Skoot Shat</span
+                        >, and <span class="highlight">Banoun</span>.
+                    </p>
+                    <p>
+                        With new projects currently in development, Usama
+                        continues to shape compelling narratives and mentor the
+                        next generation of storytellers.
+                    </p>
+                    <a href="./pages/about.html" class="btn-link">Read More</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Services -->
+        <section class="services" aria-labelledby="services">
+            <div class="container">
+                <div class="heading">
+                    <h2 id="services">My Services</h2>
+                    <p>
+                        At the Script, We empower storytellers to transform
+                        ideas into captivating cinematic realitites. Our
+                        specialized services in script doctoring, development,
+                        and ghostwriting offere expert guidance and bespoke
+                        solutions, elevating your narrative from concept to
+                        screen with precision and passion
+                    </p>
+                </div>
+                <div class="grid-container">
+                    <div class="card">
+                        <i class="fa-solid fa-stethoscope"></i>
+                        <h3>Script Doctoring</h3>
+                        <p>
+                            thoroughly analyze your script. pinpointing issues
+                            in story, plot, charaacter, conflict pacing, and
+                            dialogue. Our detailed report provides targeted
+                            recommendations to guide your revisions and optimize
+                            your narrative.
+                        </p>
+                        <a href="#" class="btn-link">Learn more</a>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <h3>Script Development</h3>
+                        <p>
+                            We expertly reconstruct abd complete promising but
+                            underdeveloped scripts – from completer concepts
+                            lacking execution to post-doctoring challenges –
+                            transforming them into polished, production-ready
+                            narratives.
+                        </p>
+                        <a href="#" class="btn-link">Learn more</a>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-user-secret"></i>
+                        <h3>Ghost Writing</h3>
+                        <p>
+                            For production companies, we offer expert,
+                            conditional rewriting and adaptation of existing
+                            screenplays. We meticulously align your script with
+                            production vision and demands, delivering a
+                            polished, ready-to-produce narrative without
+                            original writer involvement.
+                        </p>
+                        <a href="#" class="btn-link">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta" aria-labelledby="cta">
+            <div class="container">
+                <h3 id="cta">Ready to elevate your narrative?</h3>
+                <p>
+                    Explore our services or contact us today to discuss how The
+                    Script can bring your cinematic vision to life.
+                </p>
+                <div class="btn-container">
+                    <a href="mailto:contact@example.com" class="btn-link"
+                        >Contact Us</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="work-gallery" id="gallery">
+            <div class="container">
+                <div class="gallery-header">
+                    <div class="section-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h2>My Work Gallery</h2>
+                    <p class="section-subtitle">
+                        A showcase of acclaimed films and television series that
+                        demonstrate the art of compelling storytelling
+                    </p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-image-wrapper">
+                            <img
+                                src="./assets/gallery1.jpeg"
+                                alt="Khamas Daqaiq TV Series"
+                                class="gallery-image"
+                            />
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <a
+                                        href="./pages/script-details.html?script=khamas-daqaiq"
+                                        class="view-details-btn"
+                                    >
+                                        <i class="fas fa-play"></i>
+                                        <span>View Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-details">
+                            <div class="project-info">
+                                <h3>Khamas Daqaiq</h3>
+                                <span class="project-type"
+                                    >Television Series</span
+                                >
+                            </div>
+                            <div class="project-meta">
+                                <span class="year">2021</span>
+                                <span class="genre">Drama</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image-wrapper">
+                            <img
+                                src="./assets/gallery2.jpeg"
+                                alt="Khasesny Shukran Film"
+                                class="gallery-image"
+                            />
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <a
+                                        href="./pages/script-details.html?script=khasesny-shukran"
+                                        class="view-details-btn"
+                                    >
+                                        <i class="fas fa-play"></i>
+                                        <span>View Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-details">
+                            <div class="project-info">
+                                <h3>Khasesny Shukran</h3>
+                                <span class="project-type">Feature Film</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="year">2020</span>
+                                <span class="genre">Comedy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image-wrapper">
+                            <img
+                                src="./assets/gallery3.jpeg"
+                                alt="Skot Chat TV Series"
+                                class="gallery-image"
+                            />
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <a
+                                        href="./pages/script-details.html?script=skoot-shat"
+                                        class="view-details-btn"
+                                    >
+                                        <i class="fas fa-play"></i>
+                                        <span>View Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-details">
+                            <div class="project-info">
+                                <h3>Skoot Shat</h3>
+                                <span class="project-type"
+                                    >Television Series</span
+                                >
+                            </div>
+                            <div class="project-meta">
+                                <span class="year">2019</span>
+                                <span class="genre">Comedy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image-wrapper">
+                            <img
+                                src="./assets/gallery4.jpeg"
+                                alt="Shok Talk Film"
+                                class="gallery-image"
+                            />
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <a
+                                        href="./pages/script-details.html?script=shok-talk"
+                                        class="view-details-btn"
+                                    >
+                                        <i class="fas fa-play"></i>
+                                        <span>View Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-details">
+                            <div class="project-info">
+                                <h3>Shok Talk</h3>
+                                <span class="project-type">Feature Film</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="year">2018</span>
+                                <span class="genre">Drama</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image-wrapper">
+                            <img
+                                src="./assets/gallery5.jpeg"
+                                alt="Crazy Taxi Film"
+                                class="gallery-image"
+                            />
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <a
+                                        href="./pages/script-details.html?script=crazy-taxi"
+                                        class="view-details-btn"
+                                    >
+                                        <i class="fas fa-play"></i>
+                                        <span>View Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-details">
+                            <div class="project-info">
+                                <h3>Crazy Taxi</h3>
+                                <span class="project-type">Feature Film</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="year">2017</span>
+                                <span class="genre">Action</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image-wrapper">
+                            <img
+                                src="./assets/gallery6.jpeg"
+                                alt="Blue Whale Film"
+                                class="gallery-image"
+                            />
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <a
+                                        href="./pages/script-details.html?script=blue-whale"
+                                        class="view-details-btn"
+                                    >
+                                        <i class="fas fa-play"></i>
+                                        <span>View Details</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-details">
+                            <div class="project-info">
+                                <h3>Blue Whale</h3>
+                                <span class="project-type">Feature Film</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="year">2019</span>
+                                <span class="genre">Drama</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-cta">
+                    <p>Interested in collaborating on your next project?</p>
+                    <a href="#contact" class="btn-link">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-header">
+                    <div class="section-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h2>Get In Touch</h2>
+                    <p class="section-subtitle">
+                        Ready to collaborate on your next project? Let's create
+                        something amazing together.
+                    </p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>contact@example.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+20 100 004 4975</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Cairo, Egypt</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Send Me a Message</h3>
+                        <form
+                            action="mailto:contact@example.com"
+                            method="post"
+                            enctype="text/plain"
+                        >
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder="Your Name"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Your Email"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    name="subject"
+                                    placeholder="Subject"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <textarea
+                                    name="message"
+                                    placeholder="Your Message"
+                                    rows="5"
+                                    required
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="btn-link">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <img
+                                src="./assets/logo2.png"
+                                alt="Usama Hossam El-din Logo"
+                            />
+                            <h3>Usama Hossam El-din</h3>
+                            <p>
+                                Professional Script Writer & Storytelling Expert
+                            </p>
+                        </div>
+                        <div class="footer-description">
+                            <p>
+                                Transforming ideas into compelling narratives
+                                with over two decades of experience in
+                                screenwriting, script doctoring, and creative
+                                storytelling.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links-simple">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./pages/about.html">About</a></li>
+                            <li><a href="./pages/courses.html">Courses</a></li>
+                            <li>
+                                <a href="./index.html#services"
+                                    >Script Doctoring</a
+                                >
+                            </li>
+                            <li>
+                                <a href="./index.html#services"
+                                    >Script Development</a
+                                >
+                            </li>
+                            <li>
+                                <a href="./index.html#services"
+                                    >Ghost Writing</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Connect With Me</h4>
+                        <div class="social-links">
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="LinkedIn"
+                            >
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Twitter"
+                            >
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Instagram"
+                            >
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a
+                                href="https://web.facebook.com/usama.hossameldin/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Facebook"
+                            >
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="mailto:contact@example.com" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                        <div class="contact-info">
+                            <p>
+                                <i class="fas fa-envelope"></i>
+                                contact@example.com
+                            </p>
+                            <p><i class="fas fa-phone"></i> +20 111 114 5975</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-divider"></div>
+                    <div class="footer-bottom-content">
+                        <p>
+                            &copy; 2025 Usama Hossam El-din. All Rights
+                            Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Script files -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>
