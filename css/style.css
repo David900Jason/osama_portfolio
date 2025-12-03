@@ -174,7 +174,7 @@ header > .container {
     min-height: 100vh;
     margin-inline: auto;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 header > .container > * {
@@ -210,16 +210,19 @@ header > .container > .image {
 }
 
 header > .container > .image .img-box {
-    width: 500px;
+    width: clamp(200px, 40vw, 400px);
     aspect-ratio: 1 / 1;
     border-radius: 50%;
-    border: 10px solid var(--light-navy);
+    border: 8px solid var(--light-navy);
     overflow: hidden;
+    box-shadow: 0 10px 30px -10px var(--navy-shadow);
 }
 
 header > .container > .image .img-box img {
     display: block;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 main > .container {
@@ -551,20 +554,21 @@ main#about-us a.btn-link {
 }
 
 .services > .container .heading {
-    font-size: 10px;
+    text-align: center;
 }
 
 .services > .container .heading h2 {
-    text-align: start;
-    font-size: 6.4em;
-    margin-bottom: 0;
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 1rem;
 }
 
 .services > .container .heading p {
     color: var(--slate);
     line-height: 1.8;
-    font-size: 2em;
-    line-clamp: 2;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    max-width: 600px;
+    margin: 0 auto 2rem;
 }
 
 .services .grid-container {
@@ -1581,17 +1585,18 @@ footer .container {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 80%;
-        max-width: 300px;
+        width: 85%;
+        max-width: 350px;
         height: 100vh;
         background: var(--light-navy);
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 5rem 2rem 2rem;
-        gap: 1rem;
+        padding: 6rem 2rem 2rem;
+        gap: 0.5rem;
         transition: right 0.3s ease;
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.4);
+        overflow-y: auto;
     }
 
     .nav-menu.active {
@@ -1604,17 +1609,19 @@ footer .container {
 
     .nav-link {
         display: block;
-        padding: 1rem;
+        padding: 1.2rem 1rem;
         color: var(--white);
         font-size: 1.1rem;
         border-radius: 8px;
         transition: all 0.3s ease;
+        border-left: 3px solid transparent;
     }
 
     .nav-link:hover {
         background: rgba(0, 245, 212, 0.1);
         color: var(--teal);
         transform: translateX(5px);
+        border-left-color: var(--teal);
     }
 
     .nav-link::after {
@@ -1626,95 +1633,172 @@ footer .container {
     }
 
     /* Hero Section */
+    header {
+        min-height: 100vh;
+        padding: 2rem 0;
+    }
+
+    header > .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    header > .container > * {
+        flex: none;
+    }
+
+    header .text {
+        text-align: center;
+        padding: 0;
+        order: 2;
+    }
+
     header .text h1 {
-        font-size: clamp(2rem, 8vw, 3rem);
+        font-size: clamp(2.5rem, 9vw, 3.5rem);
+        margin-bottom: 1rem;
     }
 
     header .text h2 {
-        font-size: clamp(1.5rem, 6vw, 2rem);
+        font-size: clamp(2rem, 7vw, 2.5rem);
+        margin-bottom: 1rem;
     }
 
     #job-role {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+    }
+
+    header > .container > .image {
+        justify-content: center;
+        order: 1;
+    }
+
+    header > .container > .image .img-box {
+        width: clamp(200px, 45vw, 350px);
+        border-width: 6px;
     }
 
     /* Section Headings */
     main > .container > h2,
     section > .container > h2,
     section > .container > .heading h2 {
-        font-size: 2.5em;
+        font-size: clamp(2rem, 6vw, 2.5rem);
         margin-bottom: 2rem;
+        text-align: center;
     }
 
     .services > .container .heading h2 {
-        font-size: 3em;
+        font-size: clamp(2.5rem, 7vw, 3rem);
         text-align: center;
     }
 
     .services > .container .heading p {
-        font-size: 1.2rem;
+        font-size: clamp(1rem, 3vw, 1.3rem);
         text-align: center;
     }
 
     main#about-us > .container > h2 {
-        font-size: 2.5em;
+        font-size: clamp(2rem, 6vw, 2.5rem);
         text-align: center;
     }
 
     /* Services Section */
+    .services {
+        padding: 6rem 0;
+    }
+
     .services .grid-container {
         grid-template-columns: 1fr;
         gap: 2rem;
+        margin-top: 3rem;
     }
 
     .services .grid-container .card {
         padding: 2rem;
+        text-align: center;
+    }
+
+    .services .grid-container .card i {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .services .grid-container .card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .services .grid-container .card p {
+        font-size: 1rem;
+        line-height: 1.6;
     }
 
     /* About Section */
     #about-us {
-        padding: 4rem 0;
+        padding: 6rem 0;
     }
 
     #about-us > .container > h2 {
-        font-size: 2.5em;
+        font-size: clamp(2rem, 6vw, 2.5rem);
         text-align: center;
     }
 
-    #about-us .text p {
+    #about-us .text {
         font-size: 1rem;
+        line-height: 1.7;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    #about-us .text ul {
+        padding-left: 1.5rem;
+        text-align: left;
     }
 
     /* CTA Section */
+    .cta {
+        padding: 4rem 1.5rem;
+    }
+
     .cta h3 {
-        font-size: 1.5rem;
+        font-size: clamp(1.5rem, 4vw, 1.8rem);
+        margin-bottom: 1rem;
     }
 
     .cta p {
-        font-size: 1rem;
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
+        margin-bottom: 2rem;
     }
 
     /* Gallery Section */
+    .gallery {
+        padding: 6rem 0;
+    }
+
     .gallery-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 2rem;
     }
 
     .gallery-item {
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
     }
 
     .gallery-cta {
         padding: 2rem;
+        text-align: center;
     }
 
     .gallery-cta p {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
     }
 
     /* Contact Section */
     .contact {
-        padding: 4rem 0;
+        padding: 6rem 0;
     }
 
     .contact-content {
@@ -1722,16 +1806,26 @@ footer .container {
         gap: 3rem;
     }
 
+    .contact-info {
+        text-align: center;
+    }
+
     .contact-item {
-        padding: 1.5rem;
+        padding: 2rem;
+        text-align: center;
+        background: var(--light-navy);
+        border-radius: 12px;
+        margin-bottom: 1rem;
     }
 
     .contact-item i {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
     }
 
     .contact-item h3 {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
     }
 
     .contact-item p {
@@ -1740,10 +1834,20 @@ footer .container {
 
     .contact-form {
         padding: 2rem;
+        background: var(--light-navy);
+        border-radius: 12px;
     }
 
     .contact-form h3 {
         font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 1rem;
+        padding: 1rem;
     }
 
     /* Expertise Grid */
@@ -1758,10 +1862,6 @@ footer .container {
 
     .achievements {
         padding: 2rem;
-    }
-
-    .gallery-item {
-        margin-bottom: 2rem;
     }
 
     /* Footer */
@@ -1789,35 +1889,82 @@ footer .container {
         padding: 0 1rem;
     }
 
-    /* Typography */
-    main > .container > h2,
-    section > .container > h2,
-    section > .container > .heading h2 {
-        font-size: 2em;
+    /* Navigation */
+    .nav-container {
+        padding: 0.75rem 1rem;
     }
 
-    .services > .container .heading h2 {
-        font-size: 2.5em;
+    .nav-menu {
+        width: 90%;
+        max-width: 280px;
+        padding: 5rem 1.5rem 1.5rem;
     }
 
-    main#about-us > .container > h2 {
-        font-size: 2em;
-    }
-
-    /* Hero Section */
-    header .text h1 {
-        font-size: clamp(1.5rem, 7vw, 2.5rem);
-    }
-
-    header .text h2 {
-        font-size: clamp(1.2rem, 5vw, 1.5rem);
-    }
-
-    #job-role {
+    .nav-link {
+        padding: 1rem 0.75rem;
         font-size: 1rem;
     }
 
-    /* Services Cards */
+    /* Hero Section */
+    header {
+        min-height: 100vh;
+        padding: 1rem 0;
+    }
+
+    header > .container {
+        padding: 0 0.5rem;
+        gap: 0.75rem;
+    }
+
+    header .text h1 {
+        font-size: clamp(2.2rem, 8vw, 3rem);
+        margin-bottom: 0.75rem;
+    }
+
+    header .text h2 {
+        font-size: clamp(1.8rem, 6vw, 2.2rem);
+        margin-bottom: 0.75rem;
+    }
+
+    #job-role {
+        font-size: 1.2rem;
+    }
+
+    header > .container > .image .img-box {
+        width: clamp(180px, 40vw, 280px);
+        border-width: 5px;
+    }
+
+    /* Section Headings */
+    main > .container > h2,
+    section > .container > h2,
+    section > .container > .heading h2 {
+        font-size: clamp(1.8rem, 5vw, 2.2rem);
+        margin-bottom: 1.5rem;
+    }
+
+    .services > .container .heading h2 {
+        font-size: clamp(2rem, 6vw, 2.5rem);
+    }
+
+    .services > .container .heading p {
+        font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    }
+
+    main#about-us > .container > h2 {
+        font-size: clamp(1.8rem, 5vw, 2.2rem);
+    }
+
+    /* Services Section */
+    .services {
+        padding: 4rem 0;
+    }
+
+    .services .grid-container {
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
     .services .grid-container .card {
         padding: 1.5rem;
     }
@@ -1827,20 +1974,29 @@ footer .container {
     }
 
     .services .grid-container .card h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .services .grid-container .card p {
+        font-size: 0.95rem;
     }
 
     /* About Section */
     #about-us {
-        padding: 3rem 0;
+        padding: 4rem 0;
+    }
+
+    #about-us > .container > h2 {
+        font-size: clamp(1.8rem, 5vw, 2.2rem);
     }
 
     #about-us .text {
         font-size: 0.95rem;
+        padding: 0 0.5rem;
     }
 
     #about-us .text ul {
-        padding-left: 1.5rem;
+        padding-left: 1.2rem;
     }
 
     /* CTA Section */
@@ -1849,69 +2005,162 @@ footer .container {
     }
 
     .cta h3 {
-        font-size: 1.3rem;
+        font-size: clamp(1.3rem, 3.5vw, 1.5rem);
     }
 
     .cta p {
+        font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+    }
+
+    /* Gallery Section */
+    .gallery {
+        padding: 4rem 0;
+    }
+
+    .gallery-grid {
+        gap: 1.5rem;
+    }
+
+    .gallery-item {
+        margin-bottom: 1.5rem;
+    }
+
+    .gallery-cta {
+        padding: 1.5rem;
+    }
+
+    .gallery-cta p {
+        font-size: 1rem;
+    }
+
+    /* Contact Section */
+    .contact {
+        padding: 4rem 0;
+    }
+
+    .contact-content {
+        gap: 2rem;
+    }
+
+    .contact-item {
+        padding: 1.5rem;
+    }
+
+    .contact-item i {
+        font-size: 1.8rem;
+    }
+
+    .contact-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-item p {
         font-size: 0.95rem;
     }
 
-    /* Gallery */
-    .gallery-header h2 {
-        font-size: 2rem;
+    .contact-form {
+        padding: 1.5rem;
     }
 
-    .gallery-header .section-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 1.5rem;
+    .contact-form h3 {
+        font-size: 1.3rem;
     }
 
-    .gallery-image-wrapper {
-        height: 200px;
-    }
-
-    .project-info h3 {
-        font-size: 1.1rem;
-    }
-
-    .project-meta span {
-        font-size: 0.75rem;
+    .form-group input,
+    .form-group textarea {
+        padding: 0.875rem;
+        font-size: 0.95rem;
     }
 
     /* Buttons */
     .btn-link {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
+        padding: 0.75rem 1.25rem;
+        font-size: 0.95rem;
     }
 
     /* Footer */
+    .footer-content {
+        gap: 1.5rem;
+        padding: 3rem 0 1.5rem;
+    }
+
     .footer-bottom-content {
-        text-align: center;
         padding: 1rem 0;
     }
 
     .footer-bottom-content p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 }
 
 @media (max-width: 480px) {
     /* Extra small screens */
+    .container {
+        padding: 0 0.75rem;
+    }
+
+    /* Navigation */
+    .nav-container {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .nav-logo img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .logo-text {
+        font-size: 1rem;
+    }
+
+    /* Hero Section */
     header .text h1 {
-        font-size: clamp(1.2rem, 6vw, 2rem);
+        font-size: clamp(2rem, 7vw, 2.5rem);
+        margin-bottom: 0.5rem;
     }
 
     header .text h2 {
-        font-size: clamp(1rem, 4vw, 1.3rem);
+        font-size: clamp(3.5rem, 5vw, 1.8rem);
+        margin-bottom: 0.5rem;
     }
 
     #job-role {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
+    }
+
+    header > .container > .image .img-box {
+        width: clamp(150px, 35vw, 220px);
+        border-width: 4px;
+    }
+
+    /* Section Headings */
+    main > .container > h2,
+    section > .container > h2,
+    section > .container > .heading h2 {
+        font-size: clamp(1.5rem, 4.5vw, 1.8rem);
+        margin-bottom: 1.2rem;
+    }
+
+    .services > .container .heading h2 {
+        font-size: clamp(1.7rem, 5vw, 2rem);
+    }
+
+    .services > .container .heading p {
+        font-size: clamp(0.9rem, 2.2vw, 1rem);
+    }
+
+    /* Services Section */
+    .services {
+        padding: 3rem 0;
+    }
+
+    .services .grid-container {
+        gap: 1rem;
+        margin-top: 1.5rem;
     }
 
     .services .grid-container .card {
-        padding: 1rem;
+        padding: 1.25rem;
     }
 
     .services .grid-container .card i {
@@ -1919,23 +2168,135 @@ footer .container {
     }
 
     .services .grid-container .card h3 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .services .grid-container .card p {
         font-size: 0.9rem;
+        line-height: 1.5;
     }
 
-    .gallery-image-wrapper {
-        height: 180px;
+    /* About Section */
+    #about-us {
+        padding: 3rem 0;
     }
 
-    .overlay-content i {
+    #about-us > .container > h2 {
+        font-size: clamp(1.5rem, 4.5vw, 1.8rem);
+    }
+
+    #about-us .text {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    #about-us .text ul {
+        padding-left: 1rem;
+    }
+
+    /* CTA Section */
+    .cta {
+        padding: 2.5rem 0.75rem;
+    }
+
+    .cta h3 {
+        font-size: clamp(1.2rem, 3vw, 1.3rem);
+    }
+
+    .cta p {
+        font-size: clamp(0.9rem, 2vw, 1rem);
+    }
+
+    /* Gallery Section */
+    .gallery {
+        padding: 3rem 0;
+    }
+
+    .gallery-grid {
+        gap: 1rem;
+    }
+
+    .gallery-item {
+        margin-bottom: 1rem;
+    }
+
+    .gallery-cta {
+        padding: 1.25rem;
+    }
+
+    .gallery-cta p {
+        font-size: 0.95rem;
+    }
+
+    /* Contact Section */
+    .contact {
+        padding: 3rem 0;
+    }
+
+    .contact-content {
+        gap: 1.5rem;
+    }
+
+    .contact-item {
+        padding: 1.25rem;
+    }
+
+    .contact-item i {
         font-size: 1.5rem;
     }
 
-    .view-details-btn span {
+    .contact-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact-item p {
         font-size: 0.9rem;
+    }
+
+    .contact-form {
+        padding: 1.25rem;
+    }
+
+    .contact-form h3 {
+        font-size: 1.2rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    /* Buttons */
+    .btn-link {
+        padding: 0.7rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        padding: 2.5rem 0 1rem;
+        gap: 1rem;
+    }
+
+    .footer-section h4 {
+        font-size: 1.1rem;
+    }
+
+    .footer-logo img {
+        width: 50px;
+    }
+
+    .footer-logo h3 {
+        font-size: 1.3rem;
+    }
+
+    .footer-bottom-content {
+        padding: 0.75rem 0;
+    }
+
+    .footer-bottom-content p {
+        font-size: 0.8rem;
     }
 }
 
@@ -1945,41 +2306,56 @@ footer .container {
     padding: 6rem 0;
 }
 
-#about-us > .container > h2 {
-    text-align: left;
-    color: var(--light-slate);
+#about-us .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+#about-us .container h2 {
+    font-family: "Poppins", sans-serif;
     font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    color: var(--light-slate);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#about-us .text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #about-us .text p {
+    font-size: 1.1rem;
     line-height: 1.8;
     color: var(--slate);
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 #about-us .text ul {
-    list-style: disc;
-    margin: 1.5rem 0;
-    padding-left: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 #about-us .text ul li {
-    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
     color: var(--slate);
     font-size: 1.1rem;
+    line-height: 1.6;
 }
 
-#about-us .highlight {
+#about-us .text ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
     color: var(--teal);
-    font-weight: 600;
-}
-
-#about-us a.btn-link {
-    margin-top: 2rem;
-    display: inline-block;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 /* Simplified CTA Section Styles */
