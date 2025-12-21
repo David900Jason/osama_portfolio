@@ -5,13 +5,13 @@
 }
 
 :root {
-    --dark-navy: #0d1117;
-    --light-navy: #1f2a48;
-    --light-slate: #ccd6f6;
-    --slate: #8892b0;
-    --teal: #00f5d4;
-    --white: #e6f1ff;
-    --navy-shadow: rgba(2, 12, 27, 0.7);
+    --rich-brown: #1a0e0a;
+    --deep-brown: #0d0604;
+    --soft-beige: #f5f5dc;
+    --warm-beige: #e0d5c7;
+    --gold: #ffd700;
+    --light-gold: #ffed4e;
+    --brown-shadow: rgba(26, 14, 10, 0.7);
 }
 
 html {
@@ -20,8 +20,8 @@ html {
 
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: var(--dark-navy);
-    color: var(--slate);
+    background-color: var(--rich-brown);
+    color: var(--soft-beige);
     margin: 0;
     padding: 0;
 }
@@ -38,10 +38,10 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    z-index: 1000;
-    background: rgba(13, 17, 23, 0.85);
+    width: 100%;
+    background-color: rgba(46, 26, 23, 0.85);
     backdrop-filter: blur(10px);
+    z-index: 10;
     transition: all 0.3s ease;
 }
 
@@ -67,7 +67,7 @@ nav {
 }
 
 .logo-text {
-    color: var(--white);
+    color: var(--soft-beige);
     font-weight: 600;
     font-size: 1.1rem;
 }
@@ -81,7 +81,7 @@ nav {
 }
 
 .nav-link {
-    color: var(--white);
+    color: var(--soft-beige);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -95,7 +95,7 @@ nav {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--teal);
+    background: var(--gold);
     transition: width 0.3s ease;
 }
 
@@ -104,7 +104,7 @@ nav {
 }
 
 .nav-link:hover {
-    color: var(--teal);
+    color: var(--gold);
 }
 
 /* Hamburger Menu */
@@ -124,7 +124,7 @@ nav {
 .hamburger-line {
     width: 100%;
     height: 3px;
-    background: var(--white);
+    background: var(--soft-beige);
     border-radius: 2px;
     transition: all 0.3s ease;
     transform-origin: center;
@@ -156,7 +156,7 @@ nav ul > li > a::before {
     left: 20px;
     width: 0;
     height: 2px;
-    background-color: var(--teal);
+    background-color: var(--gold);
     transition: width 0.3s ease-in-out;
 }
 
@@ -166,6 +166,213 @@ nav ul > li:hover > a::before {
 
 header {
     min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: var(--rich-brown);
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+            circle at 20% 50%,
+            rgba(255, 215, 0, 0.15) 0%,
+            transparent 50%
+        ),
+        radial-gradient(
+            circle at 80% 50%,
+            rgba(255, 237, 78, 0.08) 0%,
+            transparent 50%
+        );
+    animation: pulseGlow 4s ease-in-out infinite alternate;
+    z-index: 0;
+}
+
+@keyframes pulseGlow {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+.hero-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.particle {
+    position: absolute;
+    background: var(--gold);
+    border-radius: 50%;
+    opacity: 0.1;
+    animation: floatUp 15s infinite linear;
+}
+
+.particle:nth-child(1) {
+    width: 4px;
+    height: 4px;
+    left: 10%;
+    animation-delay: 0s;
+    animation-duration: 12s;
+}
+
+.particle:nth-child(2) {
+    width: 6px;
+    height: 6px;
+    left: 20%;
+    animation-delay: 2s;
+    animation-duration: 15s;
+}
+
+.particle:nth-child(3) {
+    width: 3px;
+    height: 3px;
+    left: 30%;
+    animation-delay: 4s;
+    animation-duration: 10s;
+}
+
+.particle:nth-child(4) {
+    width: 8px;
+    height: 8px;
+    left: 40%;
+    animation-delay: 1s;
+    animation-duration: 18s;
+}
+
+.particle:nth-child(5) {
+    width: 5px;
+    height: 5px;
+    left: 50%;
+    animation-delay: 3s;
+    animation-duration: 14s;
+}
+
+.particle:nth-child(6) {
+    width: 4px;
+    height: 4px;
+    left: 60%;
+    animation-delay: 5s;
+    animation-duration: 16s;
+}
+
+.particle:nth-child(7) {
+    width: 7px;
+    height: 7px;
+    left: 70%;
+    animation-delay: 2s;
+    animation-duration: 13s;
+}
+
+.particle:nth-child(8) {
+    width: 3px;
+    height: 3px;
+    left: 80%;
+    animation-delay: 6s;
+    animation-duration: 11s;
+}
+
+.particle:nth-child(9) {
+    width: 6px;
+    height: 6px;
+    left: 90%;
+    animation-delay: 4s;
+    animation-duration: 17s;
+}
+
+.particle:nth-child(10) {
+    width: 5px;
+    height: 5px;
+    left: 15%;
+    animation-delay: 7s;
+    animation-duration: 19s;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.1;
+    }
+    90% {
+        opacity: 0.1;
+    }
+    100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.floating-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.shape {
+    position: absolute;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    animation: floatShape 20s infinite ease-in-out;
+}
+
+.shape:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    left: 10%;
+    top: 20%;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation-delay: 0s;
+    animation-duration: 25s;
+}
+
+.shape:nth-child(2) {
+    width: 80px;
+    height: 80px;
+    right: 15%;
+    top: 60%;
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+    animation-delay: 5s;
+    animation-duration: 30s;
+}
+
+.shape:nth-child(3) {
+    width: 40px;
+    height: 40px;
+    left: 70%;
+    top: 30%;
+    border-radius: 41% 59% 41% 59% / 41% 59% 59% 41%;
+    animation-delay: 10s;
+    animation-duration: 22s;
+}
+
+@keyframes floatShape {
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    33% {
+        transform: translate(30px, -30px) rotate(120deg);
+    }
+    66% {
+        transform: translate(-20px, 20px) rotate(240deg);
+    }
 }
 
 header > .container {
@@ -175,6 +382,8 @@ header > .container {
     margin-inline: auto;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 1;
 }
 
 header > .container > * {
@@ -201,7 +410,7 @@ header .text > span {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: var(--teal);
+    color: var(--gold);
 }
 
 header > .container > .image {
@@ -213,9 +422,9 @@ header > .container > .image .img-box {
     width: clamp(200px, 40vw, 400px);
     aspect-ratio: 1 / 1;
     border-radius: 50%;
-    border: 8px solid var(--light-navy);
+    border: 8px solid var(--warm-beige);
     overflow: hidden;
-    box-shadow: 0 10px 30px -10px var(--navy-shadow);
+    box-shadow: 0 10px 30px -10px var(--brown-shadow);
 }
 
 header > .container > .image .img-box img {
@@ -233,17 +442,17 @@ main > .container {
 
 main > .container > h2,
 section > .container > h2,
-section > .container > .heading h2 {
+section > .-container > .heading h2 {
     font-size: 4em;
     font-weight: 900;
     margin-bottom: 5vh;
     letter-spacing: -0.06em;
     text-align: center;
-    color: var(--light-slate);
+    color: var(--soft-beige);
 }
 
 main#about-us {
-    background-color: var(--dark-navy);
+    background-color: var(--deep-brown);
 }
 
 main#about-us > .container > h2 {
@@ -262,7 +471,7 @@ main#about-us .text > h3 {
 
 main#about-us .text > p {
     line-height: 1.8;
-    color: var(--slate);
+    color: var(--warm-beige);
 }
 
 main#about-us .text > ul {
@@ -281,7 +490,7 @@ main#about-us a.btn-link {
 
 .cta {
     padding: 6rem 0;
-    background: linear-gradient(135deg, var(--dark-navy), var(--light-navy));
+    background: linear-gradient(135deg, var(--rich-brown), var(--light-navy));
     position: relative;
     overflow: hidden;
 }
@@ -360,28 +569,28 @@ main#about-us a.btn-link {
     align-items: flex-start;
     gap: 1.5rem;
     padding: 2rem;
-    background: var(--light-navy);
+    background: var(--deep-brown);
     border-radius: 16px;
-    border: 1px solid rgba(0, 245, 212, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.1);
     transition: all 0.3s ease;
 }
 
 .feature-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px -15px var(--navy-shadow);
-    border-color: rgba(0, 245, 212, 0.3);
+    box-shadow: 0 15px 40px -15px var(--brown-shadow);
+    border-color: rgba(212, 175, 55, 0.3);
 }
 
 .feature-icon {
     width: 60px;
     height: 60px;
-    background: rgba(0, 245, 212, 0.1);
+    background: rgba(212, 175, 55, 0.1);
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    color: var(--teal);
+    color: var(--gold);
     flex-shrink: 0;
 }
 
@@ -389,12 +598,12 @@ main#about-us a.btn-link {
     font-family: "Poppins", sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--light-slate);
+    color: var(--soft-beige);
     margin: 0 0 0.5rem 0;
 }
 
 .feature-text p {
-    color: var(--slate);
+    color: var(--warm-beige);
     line-height: 1.6;
     margin: 0;
 }
@@ -407,10 +616,10 @@ main#about-us a.btn-link {
 }
 
 .primary-cta {
-    background: var(--light-navy);
+    background: var(--deep-brown);
     border-radius: 20px;
     padding: 3rem;
-    border: 1px solid rgba(0, 245, 212, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.1);
     text-align: center;
 }
 
@@ -418,12 +627,12 @@ main#about-us a.btn-link {
     font-family: "Poppins", sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
-    color: var(--light-slate);
+    color: var(--soft-beige);
     margin: 0 0 1rem 0;
 }
 
 .primary-cta p {
-    color: var(--slate);
+    color: var(--warm-beige);
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 2rem;
@@ -441,8 +650,8 @@ main#about-us a.btn-link {
     align-items: center;
     gap: 0.5rem;
     padding: 1rem 2rem;
-    background: linear-gradient(135deg, var(--teal), var(--light-navy));
-    color: var(--dark-navy);
+    background: linear-gradient(135deg, var(--gold), var(--rich-brown));
+    color: var(--rich-brown);
     text-decoration: none;
     font-weight: 600;
     border-radius: 50px;
@@ -452,7 +661,7 @@ main#about-us a.btn-link {
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px -10px var(--navy-shadow);
+    box-shadow: 0 10px 30px -10px var(--brown-shadow);
 }
 
 .btn-secondary {
@@ -461,26 +670,26 @@ main#about-us a.btn-link {
     gap: 0.5rem;
     padding: 1rem 2rem;
     background: transparent;
-    color: var(--teal);
+    color: var(--gold);
     text-decoration: none;
     font-weight: 600;
-    border: 2px solid var(--teal);
+    border: 2px solid var(--gold);
     border-radius: 50px;
     transition: all 0.3s ease;
     font-size: 1.1rem;
 }
 
 .btn-secondary:hover {
-    background: var(--teal);
-    color: var(--dark-navy);
+    background: var(--gold);
+    color: var(--rich-brown);
     transform: translateY(-3px);
 }
 
 .contact-info {
-    background: var(--light-navy);
+    background: var(--deep-brown);
     border-radius: 20px;
     padding: 2rem;
-    border: 1px solid rgba(0, 245, 212, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.1);
 }
 
 .contact-item {
@@ -488,7 +697,7 @@ main#about-us a.btn-link {
     align-items: center;
     gap: 1rem;
     padding: 1rem 0;
-    border-bottom: 1px solid rgba(0, 245, 212, 0.1);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
 }
 
 .contact-item:last-child {
@@ -498,12 +707,12 @@ main#about-us a.btn-link {
 .contact-item i {
     width: 40px;
     height: 40px;
-    background: rgba(0, 245, 212, 0.1);
+    background: rgba(212, 175, 55, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--teal);
+    color: var(--gold);
     font-size: 1rem;
 }
 
@@ -514,13 +723,13 @@ main#about-us a.btn-link {
 
 .contact-item .label {
     font-size: 0.9rem;
-    color: var(--slate);
+    color: var(--warm-beige);
     margin-bottom: 0.25rem;
 }
 
 .contact-item .value {
     font-size: 1rem;
-    color: var(--light-slate);
+    color: var(--soft-beige);
     font-weight: 500;
 }
 
@@ -554,21 +763,22 @@ main#about-us a.btn-link {
 }
 
 .services > .container .heading {
-    text-align: center;
+    text-align: left;
 }
 
 .services > .container .heading h2 {
-    text-align: center;
-    font-size: clamp(2rem, 5vw, 4rem);
-    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 4em;
+    margin-bottom: 0;
+    color: var(--soft-beige);
 }
 
 .services > .container .heading p {
-    color: var(--slate);
+    color: var(--warm-beige);
     line-height: 1.8;
     font-size: clamp(0.9rem, 2vw, 1.2rem);
     max-width: 65ch;
-    margin: 0 auto 2rem;
+    margin: 0 0 2rem 0;
 }
 
 .services .grid-container {
@@ -584,33 +794,33 @@ main#about-us a.btn-link {
     text-align: center;
     padding: 3rem 2rem;
     border-radius: 8px;
-    background-color: var(--light-navy);
-    border-top: 4px solid var(--teal);
+    background-color: var(--deep-brown);
+    border-top: 4px solid var(--gold);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .services .grid-container .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    box-shadow: 0 10px 30px -15px var(--brown-shadow);
 }
 
 .services .grid-container .card i {
     font-size: 3rem;
-    color: var(--teal);
+    color: var(--gold);
     margin-bottom: 1.5rem;
 }
 
 .services .grid-container .card h3 {
     font-size: 1.875rem;
     margin: 0;
-    color: var(--light-slate);
+    color: var(--soft-beige);
 }
 
 .services .grid-container .card p {
     font-size: 0.95rem;
     margin-bottom: 32px;
     line-height: 1.6;
-    color: var(--slate);
+    color: var(--warm-beige);
     display: -webkit-box;
     -webkit-line-clamp: 3;
     line-clamp: 3;
@@ -647,7 +857,7 @@ main#about-us a.btn-link {
     height: 100%;
     background: linear-gradient(
         to top,
-        rgba(13, 17, 23, 0.9) 0%,
+        rgba(46, 26, 23, 0.9) 0%,
         transparent 100%
     );
     opacity: 0;
@@ -681,7 +891,7 @@ main#about-us a.btn-link {
 }
 
 .work-gallery .grid-container .img-card .img-card-details h2 {
-    color: var(--white);
+    color: var(--soft-beige);
     margin: 0;
     font-size: 1.5rem;
 }
@@ -699,8 +909,8 @@ main#about-us a.btn-link {
 
 /* Footer Styles */
 footer {
-    background: linear-gradient(135deg, var(--dark-navy), var(--light-navy));
-    border-top: 1px solid rgba(0, 245, 212, 0.1);
+    background: linear-gradient(135deg, var(--deep-brown), var(--rich-brown));
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
     margin-top: 4rem;
 }
 
@@ -721,7 +931,7 @@ footer .container {
     font-family: "Poppins", sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--light-slate);
+    color: var(--soft-beige);
     margin: 0 0 1.5rem 0;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -739,25 +949,25 @@ footer .container {
     height: 60px;
     border-radius: 50%;
     margin-bottom: 1rem;
-    border: 2px solid var(--teal);
+    border: 2px solid var(--gold);
 }
 
 .footer-logo h3 {
     font-family: "Poppins", sans-serif;
     font-size: 1.3rem;
     font-weight: 700;
-    color: var(--light-slate);
+    color: var(--soft-beige);
     margin: 0 0 0.5rem 0;
 }
 
 .footer-logo p {
     font-size: 0.9rem;
-    color: var(--teal);
+    color: var(--gold);
     margin: 0;
 }
 
 .footer-description p {
-    color: var(--slate);
+    color: var(--warm-beige);
     line-height: 1.6;
     font-size: 0.95rem;
     margin: 0;
@@ -774,14 +984,14 @@ footer .container {
 }
 
 .footer-links-simple li a {
-    color: var(--slate);
+    color: var(--warm-beige);
     text-decoration: none;
     transition: color 0.3s ease;
     font-size: 0.95rem;
 }
 
 .footer-links-simple li a:hover {
-    color: var(--teal);
+    color: var(--gold);
 }
 
 .social-links {
@@ -797,27 +1007,44 @@ footer .container {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: rgba(0, 245, 212, 0.1);
-    border: 1px solid rgba(0, 245, 212, 0.2);
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.2);
     border-radius: 50%;
-    color: var(--teal);
+    color: var(--gold);
     text-decoration: none;
     transition: all 0.3s ease;
     font-size: 1rem;
 }
 
 .social-links a:hover {
-    background: var(--teal);
-    color: var(--dark-navy);
+    background-color: var(--gold);
+    color: var(--rich-brown);
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 245, 212, 0.3);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.cta-container .btn-link {
+    background-color: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-container .btn-link:hover {
+    background-color: var(--gold);
+    color: var(--rich-brown);
 }
 
 .contact-info p {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    color: var(--slate);
+    color: var(--warm-beige);
     font-size: 0.95rem;
     margin-bottom: 0.8rem;
 }
@@ -827,7 +1054,7 @@ footer .container {
 }
 
 .contact-info i {
-    color: var(--teal);
+    color: var(--gold);
     font-size: 0.9rem;
     width: 16px;
 }
@@ -837,7 +1064,7 @@ footer .container {
     background: linear-gradient(
         90deg,
         transparent,
-        rgba(0, 245, 212, 0.3),
+        rgba(212, 175, 55, 0.3),
         transparent
     );
     margin: 2rem 0;
@@ -845,15 +1072,16 @@ footer .container {
 
 .footer-bottom-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 2rem 0 4rem;
     flex-wrap: wrap;
     gap: 1rem;
+    text-align: center;
 }
 
 .footer-bottom-content p {
-    color: var(--slate);
+    color: var(--warm-beige);
     font-size: 0.9rem;
     margin: 0;
 }
@@ -865,14 +1093,14 @@ footer .container {
 }
 
 .footer-bottom-links a {
-    color: var(--slate);
+    color: var(--warm-beige);
     text-decoration: none;
     font-size: 0.9rem;
     transition: color 0.3s ease;
 }
 
 .footer-bottom-links a:hover {
-    color: var(--teal);
+    color: var(--gold);
 }
 
 /* Responsive Footer */
@@ -899,8 +1127,8 @@ footer .container {
 
 .btn-link {
     background-color: transparent;
-    border: 1px solid var(--teal);
-    color: var(--teal);
+    border: 1px solid var(--gold);
+    color: var(--gold);
     padding: 0.75rem 1.25rem;
     cursor: pointer;
     border-radius: 4px;
@@ -910,14 +1138,20 @@ footer .container {
 }
 
 .btn-link:hover {
-    background-color: var(--teal);
-    color: var(--dark-navy);
+    background-color: var(--gold);
+    color: var(--rich-brown);
+}
+
+span.text-highlight {
+    font-size: inherit;
+    display: inline;
+    color: var(--gold);
 }
 
 /* Enhanced About Section Styles */
 #about-us {
     padding: 6rem 0;
-    background: linear-gradient(135deg, var(--dark-navy), var(--light-navy));
+    background: linear-gradient(135deg, var(--deep-brown), var(--rich-brown));
     position: relative;
     overflow: hidden;
 }
@@ -929,7 +1163,7 @@ footer .container {
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--teal), transparent);
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
 }
 
 .about-header {
@@ -941,15 +1175,15 @@ footer .container {
 .about-header .section-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, var(--teal), var(--light-navy));
+    background: linear-gradient(135deg, var(--gold), var(--deep-brown));
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 2rem;
     font-size: 2rem;
-    color: var(--white);
-    box-shadow: 0 10px 30px -10px var(--navy-shadow);
+    color: var(--soft-beige);
+    box-shadow: 0 10px 30px -10px var(--brown-shadow);
     animation: float 3s ease-in-out infinite;
 }
 
@@ -967,14 +1201,14 @@ footer .container {
     font-family: "Poppins", sans-serif;
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 700;
-    color: var(--light-slate);
+    color: var(--soft-beige);
     margin: 0 0 1rem 0;
     letter-spacing: -0.02em;
 }
 
 .section-subtitle {
     font-size: 1.2rem;
-    color: var(--slate);
+    color: var(--warm-beige);
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.6;
@@ -994,13 +1228,13 @@ footer .container {
     font-family: "Poppins", sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
-    color: var(--light-slate);
+    color: var(--soft-beige);
     margin: 0 0 1rem 0;
 }
 
 .expertise-intro p {
     font-size: 1.1rem;
-    color: var(--slate);
+    color: var(--warm-beige);
     line-height: 1.7;
     max-width: 700px;
     margin: 0 auto;
@@ -1145,7 +1379,7 @@ footer .container {
     font-size: 1.1rem;
     background: linear-gradient(135deg, var(--teal), var(--light-navy));
     border: none;
-    color: var(--dark-navy);
+    color: var(--rich-brown);
     font-weight: 600;
     border-radius: 50px;
     transition: all 0.3s ease;
@@ -1185,10 +1419,60 @@ footer .container {
     }
 }
 
+/* Genre Tags Styling */
+.genre-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    align-items: center;
+}
+
+.genre-tag {
+    padding: 0.25rem 0.75rem;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 20px;
+    font-size: 0.75rem;
+    color: var(--gold);
+    font-weight: 500;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.genre-tag:hover {
+    background: rgba(255, 215, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+/* Fix project meta alignment */
+.project-meta {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-meta .year {
+    padding: 0.25rem 0.75rem;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: var(--gold);
+    font-weight: 500;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.project-meta .genre-tags {
+    flex: 1;
+    margin-top: 0;
+}
+
 /* Enhanced Gallery Section Styles */
 .work-gallery {
     padding: 6rem 0;
-    background: var(--dark-navy);
+    background: var(--rich-brown);
     position: relative;
 }
 
@@ -1263,7 +1547,7 @@ footer .container {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 245, 212, 0.9);
+    background: rgba(255, 215, 0, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1280,7 +1564,7 @@ footer .container {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    color: var(--dark-navy);
+    color: var(--deep-brown);
     font-weight: 600;
 }
 
@@ -1293,7 +1577,7 @@ footer .container {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    color: var(--dark-navy);
+    color: var(--deep-brown);
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -1321,7 +1605,7 @@ footer .container {
 }
 
 .project-type {
-    color: var(--teal);
+    color: var(--gold);
     font-size: 0.9rem;
     font-weight: 500;
 }
@@ -1334,10 +1618,10 @@ footer .container {
 
 .project-meta span {
     padding: 0.25rem 0.75rem;
-    background: rgba(0, 245, 212, 0.1);
+    background: rgba(255, 215, 0, 0.1);
     border-radius: 20px;
     font-size: 0.8rem;
-    color: var(--teal);
+    color: var(--gold);
     font-weight: 500;
 }
 
@@ -1346,7 +1630,7 @@ footer .container {
     padding: 3rem;
     background: var(--light-navy);
     border-radius: 20px;
-    border: 1px solid rgba(0, 245, 212, 0.1);
+    border: 1px solid rgba(255, 215, 0, 0.1);
 }
 
 .gallery-cta p {
@@ -1363,7 +1647,7 @@ footer .container {
     font-size: 1.1rem;
     background: linear-gradient(135deg, var(--teal), var(--light-navy));
     border: none;
-    color: var(--dark-navy);
+    color: var(--rich-brown);
     font-weight: 600;
     border-radius: 50px;
     transition: all 0.3s ease;
@@ -1378,7 +1662,7 @@ footer .container {
 /* Contact Section */
 .contact {
     padding: 6rem 0;
-    background: linear-gradient(135deg, var(--dark-navy), var(--light-navy));
+    background: linear-gradient(135deg, var(--rich-brown), var(--light-navy));
 }
 
 .contact-header {
@@ -1494,7 +1778,7 @@ footer .container {
 .form-group textarea {
     width: 100%;
     padding: 1rem;
-    background: var(--dark-navy);
+    background: var(--rich-brown);
     border: 2px solid rgba(0, 245, 212, 0.1);
     border-radius: 8px;
     color: var(--white);
@@ -1585,22 +1869,24 @@ footer .container {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 85%;
-        max-width: 350px;
+        width: 100%;
+        max-width: 400px;
         height: 100vh;
-        background: var(--light-navy);
+        background: var(--rich-brown) !important;
+        backdrop-filter: blur(10px);
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 6rem 2rem 2rem;
-        gap: 0.5rem;
+        padding: 5rem 2rem 2rem;
         transition: right 0.3s ease;
-        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.4);
+        z-index: 999;
         overflow-y: auto;
+        border-left: 1px solid rgba(255, 215, 0, 0.2);
     }
 
     .nav-menu.active {
         right: 0;
+        background: var(--rich-brown) !important;
     }
 
     .nav-menu li {
@@ -2302,7 +2588,7 @@ footer .container {
 
 /* Simplified About Section Styles */
 #about-us {
-    background-color: var(--dark-navy);
+    background-color: var(--deep-brown);
     padding: 6rem 0;
 }
 
@@ -2316,7 +2602,7 @@ footer .container {
     font-family: "Poppins", sans-serif;
     font-size: 3rem;
     font-weight: 700;
-    color: var(--light-slate);
+    color: var(--soft-beige);
     text-align: center;
     margin-bottom: 3rem;
 }
@@ -2324,7 +2610,7 @@ footer .container {
 #about-us .text p {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: var(--slate);
+    color: var(--warm-beige);
     margin-bottom: 2rem;
 }
 
@@ -2338,16 +2624,15 @@ footer .container {
     position: relative;
     padding-left: 2rem;
     margin-bottom: 1rem;
-    color: var(--slate);
+    color: var(--warm-beige);
     font-size: 1.1rem;
     line-height: 1.6;
 }
 
 /* Simplified CTA Section Styles */
 .cta {
-    background-color: var(--light-navy);
-    padding: 4rem 0;
-    text-align: center;
+    background-color: var(--deep-brown);
+    padding-block: 4rem;
 }
 
 .cta h3 {
@@ -2356,7 +2641,7 @@ footer .container {
     letter-spacing: -0.02em;
     text-align: center;
     margin-bottom: 1rem;
-    color: var(--light-slate);
+    color: var(--soft-beige);
 }
 
 .cta p {
@@ -2364,7 +2649,7 @@ footer .container {
     max-width: 600px;
     line-height: 1.6;
     margin: 0 auto 2rem;
-    color: var(--slate);
+    color: var(--warm-beige);
     font-size: 1.1rem;
 }
 

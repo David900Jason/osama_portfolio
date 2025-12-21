@@ -261,7 +261,7 @@ main .container {
 /* Course Cards */
 .courses-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 3rem;
 }
@@ -273,6 +273,8 @@ main .container {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     border-top: 3px solid transparent;
+    border: 1px solid rgba(0, 245, 212, 0.1);
+    box-shadow: 0 4px 20px -10px var(--navy-shadow);
 }
 
 .course-card.featured {
@@ -318,8 +320,8 @@ main .container {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("../assets/course-placeholder.jpg") center/cover;
-    opacity: 0.3;
+    background: url("../assets/course-banner.jpeg") center/cover;
+    opacity: 1;
 }
 
 .course-overlay {
@@ -447,9 +449,43 @@ main .container {
 }
 
 .course-price .price {
-    font-size: 1.5rem;
+    display: inline-block;
+    font-size: 1.25rem;
     font-weight: 700;
-    color: var(--teal);
+    color: var(--white);
+    background: linear-gradient(135deg, var(--teal), var(--light-navy));
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    border: 2px solid var(--teal);
+    box-shadow: 0 4px 15px -5px var(--navy-shadow);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.course-price .price::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: left 0.5s ease;
+}
+
+.course-card:hover .course-price .price {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px -5px var(--navy-shadow);
+}
+
+.course-card:hover .course-price .price::before {
+    left: 100%;
 }
 
 /* CTA Section */
@@ -544,6 +580,7 @@ main .container {
 
     .courses-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
     .categories-grid {

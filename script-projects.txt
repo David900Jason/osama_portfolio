@@ -1,0 +1,211 @@
+# SCRIPT PROJECTS CONTENT TEMPLATE
+# Fill in the details for each project below
+
+=====================================
+KHAMAS DAQAIQ (2021)
+=====================================
+Type: Television Series
+Genre: Drama
+Episodes: 8 Episodes
+Duration: 30 to 40 minutes per episode
+Language: Arabic
+
+DESCRIPTION:
+A social and romantic drama that explores intricate human relationships and emotional complexities within a contemporary setting.
+
+SYNOPSIS:
+The series focuses on a collection of love stories that bring various characters together in a high-stakes, emotional atmosphere. The "Five Minutes" segment specifically features a story starring Jamal Suliman and Wafaa Amer.
+
+KEY THEMES:
+- Social and familial conflict
+- Romantic entanglements and "overflowing emotions"
+- Psychological drama and interpersonal secrets
+
+TARGET AUDIENCE:
+Adults and fans or Arabic social drama and romantic suspense
+
+=====================================
+KHASESNY SHUKRAN (2020)
+=====================================
+Type: Feature Film
+Genre: Comedy
+Duration: 94 minutes
+Language: Arabic
+
+DESCRIPTION:
+A light-hearted Egyptian comedy that addresses the social and personal challenges of obesity through a satirical lens.
+
+SYNOPSIS:
+The film follows four overweight individuals who face various social hurdles and failed diets. Desperate for a change, they seek out a specialized doctor and embark on a series of unconventional and humorous experiments to lose weight and reclaim their lives.
+
+KEY THEMES:
+- Social pressure and bullying regarding body image.
+- The struggle of weight loss journeys.
+- Self-acceptance and friendship.
+
+TARGET AUDIENCE:
+Families and fans of light Egyptian comedy.
+
+=====================================
+SKOOT SHAT (2021)
+=====================================
+Type: Television Series
+Genre: Comedy
+Episodes: 8 Episodes
+Duration: 30 minutes per episode
+Language: Arabic
+
+DESCRIPTION:
+A contemporary social thriller that explores the darker consequences of digital communication and the hidden lives people lead online.
+
+SYNOPSIS:
+The plot centers on a mysterious online "chat" that begins to unravel the lives of its participants. What starts as private digital interactions quickly leads to the exposure of long-buried family secrets and betrayals, forcing the characters to face the real-world repercussions of their virtual actions.
+
+KEY THEMES:
+- Digital privacy and the dangers of the virtual world.
+- Betrayal and hidden identities
+- Impact of social media on modern family dynamics.
+
+TARGET AUDIENCE:
+Young adults and mature audiences interested in psychological drama and technology-focused thrillers.
+
+=====================================
+SHOK TALK (2018)
+=====================================
+Type: Television Series, Sketch Comedy
+Genre: Satire, Parody, Comedy.
+Episodes: 29 episodes
+Duration: 20 - 35 mins. per episode
+Language: Arabic
+
+DESCRIPTION:
+A bold satirical program that critiques social, cultural, and political issues within Egypt and the broader Arab world. It utilizes scripted sketches to parody celebrities, media trends, and societal norms.
+
+SYNOPSIS:
+A bold satirical program that critiques social, cultural, and political issues within Egypt and the broader Arab world. It utilizes scripted sketches to parody celebrities, media trends, and societal norms.
+
+KEY THEMES:
+- Suspension geometry
+- Off-road racing strategy (e.g., Baja 1000)
+- Vehicle modifications
+- Product engineering (coilovers, air suspension).
+
+TARGET AUDIENCE:
+Automotive enthusiasts, off-roaders, DIY mechanics, and professional racers.
+
+=====================================
+CRAZY TAXI (2017)
+=====================================
+Type: TV Prank Series
+Genre: Prank, Reality, Sketch Comedy
+Episodes: 30 episodes (Season 1), 27 episodes (Season 2)
+Duration: 15 to 20 minutes
+Language: Arabic
+
+DESCRIPTION:
+The show features host Ibrahim Al-Samman disguising himself as a variety of eccentric taxi drivers (e.g., a thug, an elderly man, or a person with strange habits) to prank unsuspecting passengers picked up on the streets of Egypt.
+
+SYNOPSIS:
+Each episode follows a "taxi ride" where the driver behaves increasingly erratically or engages the passenger in bizarre, uncomfortable conversations. The tension builds until the prank is revealed, typically ending in laughter once the passengers realize they are being filmed.
+
+KEY THEMES:
+- Social improvisation.
+- Hidden-camera humor.
+- Egyptian street culture.
+- Character-driven comedy.
+
+TARGET AUDIENCE:
+General Arabic-speaking audiences, particularly those in Egypt who enjoy prank-style reality television during the Ramadan season.
+
+=====================================
+BLUE WHALE (2020)
+=====================================
+Type: Feature Film
+Genre: Thriller, Horror, Mystery
+Duration: 77 to 95 minutes
+Language: Arabic
+
+DESCRIPTION:
+A social thriller directed by Alaa Morsy that explores the lethal influence of malicious online content on modern youth.
+
+SYNOPSIS:
+When teenage suicide rates rise mysteriously, police launch an investigation that links the deaths to the "Blue Whale Challenge," a viral online game. The story highlights the risks adolescents face when parents are too preoccupied with technology to monitor their children's digital lives.
+
+KEY THEMES:
+- Cyber dangers. 
+- Parental neglect. 
+- Teenage isolation. 
+- Mental health.
+
+TARGET AUDIENCE:
+Parents, young adults, and teenagers (rated 18+ in some regions due to mature themes).
+
+=====================================
+AL MESTERAIHA (2025)
+=====================================
+Type: Feature Film
+Genre: Comedy, Adventure, Heist
+Duration: 105 minutes
+Language: Arabic
+
+DESCRIPTION:
+A masterful con artist returns to Egypt after 20 years in hiding to recover a rare diamond she buried before fleeing. She discovers that the cemetery where the gem was hidden has been relocated, forcing her to reunite with her estranged children to track it down, only to realize she has been caught in a much larger con.
+
+SYNOPSIS:
+Shahinez El Marashli, a masterful con artist, returns to Egypt after 20 years in hiding to recover a rare diamond she buried before fleeing. She discovers that the cemetery where the gem was hidden has been relocated, forcing her to reunite with her estranged children to track it down, only to realize she has been caught in a much larger con.
+
+KEY THEMES:
+- Family reunion. 
+- Deception and greed.
+- "Get-rich-quick" schemes. 
+- Comedic social interactions.
+
+TARGET AUDIENCE:
+General Arabic-speaking audiences, particularly fans of lighthearted Egyptian family comedies.
+
+=====================================
+BENOON (2024)
+=====================================
+Type: Television Series
+Genre: Drama, Mystery, Thriller
+Episodes: 6 Episodes
+Duration: 45 minutes per episode
+Language: Arabic
+
+DESCRIPTION:
+The series follows a high-stakes psychological mystery centered on a wealthy family facing a major crisis. The plot revolves around a man (Hani Adel) from a prominent family who is under intense pressure to produce an heir. When he discovers he is unable to have children, he and his wife (Passant Shawky) find themselves embroiled in a dark web of lies and crimes to protect their secret and the family's reputation.
+
+SYNOPSIS:
+[Add detailed synopsis here]
+
+KEY THEMES:
+- Infertility.
+- Family legacy.
+- Social pressure.
+- Deception.
+- The lengths people go to for survival and status.
+
+TARGET AUDIENCE:
+Adult viewers interested in intense psychological dramas and social thrillers.
+
+=====================================
+AWAAD FE MAWSEM EL-RIYADH (2024)
+=====================================
+Type: Live Theater
+Genre: Comedy, Social
+Duration: 140 minutes
+Language: Arabic (Saudi Arabia's Dialect)
+
+DESCRIPTION:
+دور أحداث المسرحية حول شخصية "عواض" الذي يقرر زيارة موسم الرياض للاستمتاع بالفعاليات العالمية، ولكن بسبب عفويته واختلاف بيئته، يجد نفسه في سلسلة من المفارقات المضحكة والمواقف المحرجة مع الزوار والسياح، مما يسلط الضوء على التحولات الثقافية والترفيهية في المملكة بطابع فكاهي.
+
+SYNOPSIS:
+[Add detailed synopsis here] 
+
+KEY THEMES:
+- Entertainment in Saudi Arabia
+- Cultural conflict
+- Social Comedy
+
+TARGET AUDIENCE:
+Families, and People interested in Arabic Comedy
