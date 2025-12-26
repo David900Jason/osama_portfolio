@@ -96,7 +96,7 @@ const scriptData = {
     },
     "crazy-taxi": {
         title: "Crazy Taxi",
-        type: "TV Prank Series",
+        type: "TV Prank Show",
         year: "2017",
         genre: "Prank, Reality, Sketch Comedy",
         description:
@@ -166,8 +166,8 @@ const scriptData = {
         notes: "This comedy-heist film combines family dynamics with clever plotting, creating an entertaining story about reconciliation and the consequences of past actions.",
         bannerImage: "../assets/gallery7.jpeg",
     },
-    benoon: {
-        title: "Benoon",
+    banon: {
+        title: "Banon",
         type: "Television Series",
         year: "2024",
         genre: "Drama, Mystery, Thriller",
@@ -192,7 +192,7 @@ const scriptData = {
     },
     "awaad-fe-mawsem-el-riyadh": {
         title: "Awaad Fe Mawsem El-Riyadh",
-        type: "Live Theater",
+        type: "TV Prank Show",
         year: "2024",
         genre: "Comedy, Social",
         description:
