@@ -270,7 +270,7 @@ header .text > span {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: var(--gold);
+    color: white;
 }
 
 header > .container > .image {
@@ -1012,11 +1012,11 @@ footer .container {
 span.text-highlight {
     font-size: inherit;
     display: inline;
-    color: var(--gold);
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8),
-        0 0 20px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.4),
-        0 0 40px rgba(255, 215, 0, 0.2);
-    filter: brightness(1.2);
+    color: #c9a878;
+    text-shadow: 0 0 6px rgba(212, 184, 150, 0.6),
+        0 0 12px rgba(212, 184, 150, 0.4), 0 0 18px rgba(212, 184, 150, 0.3),
+        0 0 24px rgba(212, 184, 150, 0.1);
+    filter: brightness(1.05);
 }
 
 /* Enhanced About Section Styles */

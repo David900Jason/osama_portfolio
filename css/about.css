@@ -1,6 +1,6 @@
 /* Header Banner Styles */
 header {
-    min-height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,6 +9,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     position: relative;
 }
 
